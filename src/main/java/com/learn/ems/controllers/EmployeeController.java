@@ -18,6 +18,7 @@ public class EmployeeController {
     }
     @PostMapping("/employee")
     public Employee newEmployee(@RequestBody Employee employee){
+        System.out.println(employee);
   return  employeeService.createEmployee(employee);
     }
   @GetMapping("/employee/{eid}")
