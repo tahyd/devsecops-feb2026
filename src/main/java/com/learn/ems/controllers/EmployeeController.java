@@ -14,7 +14,7 @@ public class EmployeeController {
     private IEmployeeService employeeService;
     @GetMapping("/hello")
     public  String hello(){
-        return "Jenkins Pipeline Demo - hello!";
+        return "Jenkins Pipeline Demo!";
     }
     @PostMapping("/employee")
     public Employee newEmployee(@RequestBody Employee employee){
